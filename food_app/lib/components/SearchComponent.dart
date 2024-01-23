@@ -15,7 +15,7 @@ class SearchComponent extends StatelessWidget {
             child: Text(
               'What would you like \nto orders!',
               style: TextStyle(
-                  fontSize: 24,
+                  fontSize: 30,
                   fontWeight: FontWeight.bold,
                   color: AppColors.whiteColor),
             ),
