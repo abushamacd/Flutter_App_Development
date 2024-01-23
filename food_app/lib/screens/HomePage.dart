@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:food_app/components/CategoryComponent.dart';
 import 'package:food_app/components/HeaderComponent.dart';
 import 'package:food_app/components/SearchComponent.dart';
 import 'package:food_app/styles/AppColor.dart';
@@ -21,7 +22,7 @@ class HomePage extends StatelessWidget {
               // search area
               SearchComponent(),
               // Category area
-              // CategoryComponent()
+              CategoryComponent()
             ],
           ),
         ),
