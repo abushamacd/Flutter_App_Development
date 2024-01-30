@@ -7,160 +7,184 @@ class Homepage extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-          body:
-              // // container and text
-              //     Container(
-              //   height: 200,
-              //   width: 200,
-              //   decoration: BoxDecoration(
-              //     borderRadius: BorderRadius.circular(20),
-              //     color: Colors.amber,
-              //   ),
-              //   child: Center(
-              //     child: Text(
-              //       "Hello World",
-              //       style: TextStyle(fontSize: 20),
-              //     ),
-              //   ),
-              // ),
+        body:
+            // // container and text
+            //     Container(
+            //   height: 200,
+            //   width: 200,
+            //   decoration: BoxDecoration(
+            //     borderRadius: BorderRadius.circular(20),
+            //     color: Colors.amber,
+            //   ),
+            //   child: Center(
+            //     child: Text(
+            //       "Hello World",
+            //       style: TextStyle(fontSize: 20),
+            //     ),
+            //   ),
+            // ),
 
-              // // row and column
-              //     Column(
-              //   crossAxisAlignment: CrossAxisAlignment.start,
-              //   children: [
-              //     Text(
-              //       "Hello World",
-              //       style: TextStyle(fontSize: 20),
-              //     ),
-              //     Text(
-              //       "Welcome to earth",
-              //       style: TextStyle(fontSize: 20),
-              //     ),
-              //   ],
-              // ),
+            // // row and column
+            //     Column(
+            //   crossAxisAlignment: CrossAxisAlignment.start,
+            //   children: [
+            //     Text(
+            //       "Hello World",
+            //       style: TextStyle(fontSize: 20),
+            //     ),
+            //     Text(
+            //       "Welcome to earth",
+            //       style: TextStyle(fontSize: 20),
+            //     ),
+            //   ],
+            // ),
 
-              //   Row(
-              // crossAxisAlignment: CrossAxisAlignment.start,
-              // children: [
-              //   Text(
-              //     "Hello World",
-              //     style: TextStyle(fontSize: 20),
-              //   ),
-              //   Text(
-              //     "Welcome to earth",
-              //     style: TextStyle(fontSize: 20),
-              //   ),
-              // ],
+            //   Row(
+            // crossAxisAlignment: CrossAxisAlignment.start,
+            // children: [
+            //   Text(
+            //     "Hello World",
+            //     style: TextStyle(fontSize: 20),
+            //   ),
+            //   Text(
+            //     "Welcome to earth",
+            //     style: TextStyle(fontSize: 20),
+            //   ),
+            // ],
 
-              //    // single child scroll
-              //     SingleChildScrollView(
-              //   scrollDirection: Axis.horizontal,
-              //   child: Row(
-              //     children: [
-              //       Container(
-              //         height: 200,
-              //         width: 200,
-              //         color: Colors.amber,
-              //       ),
-              //       Container(
-              //         height: 200,
-              //         width: 200,
-              //         color: Colors.red,
-              //       ),
-              //       Container(
-              //         height: 200,
-              //         width: 200,
-              //         color: Colors.green,
-              //       ),
-              //       Container(
-              //         height: 200,
-              //         width: 200,
-              //         color: Colors.blue,
-              //       ),
-              //     ],
-              //   ),
-              // ),
+            //    // single child scroll
+            //     SingleChildScrollView(
+            //   scrollDirection: Axis.horizontal,
+            //   child: Row(
+            //     children: [
+            //       Container(
+            //         height: 200,
+            //         width: 200,
+            //         color: Colors.amber,
+            //       ),
+            //       Container(
+            //         height: 200,
+            //         width: 200,
+            //         color: Colors.red,
+            //       ),
+            //       Container(
+            //         height: 200,
+            //         width: 200,
+            //         color: Colors.green,
+            //       ),
+            //       Container(
+            //         height: 200,
+            //         width: 200,
+            //         color: Colors.blue,
+            //       ),
+            //     ],
+            //   ),
+            // ),
 
-              //     // expanded
-              //     Column(
-              //   children: [
-              //     Expanded(
-              //       flex: 2,
-              //       child: Container(
-              //         color: Colors.blue,
-              //       ),
-              //     ),
-              //     Expanded(
-              //       flex: 1,
-              //       child: Container(
-              //         height: 200,
-              //         color: Colors.red,
-              //       ),
-              //     ),
-              //   ],
-              // ),
+            //     // expanded
+            //     Column(
+            //   children: [
+            //     Expanded(
+            //       flex: 2,
+            //       child: Container(
+            //         color: Colors.blue,
+            //       ),
+            //     ),
+            //     Expanded(
+            //       flex: 1,
+            //       child: Container(
+            //         height: 200,
+            //         color: Colors.red,
+            //       ),
+            //     ),
+            //   ],
+            // ),
 
-              //     // padding
-              //     Column(
-              //   children: [
-              //     Padding(
-              //       padding: EdgeInsets.all(22),
-              //       child: Container(
-              //         height: 200,
-              //         decoration: BoxDecoration(
-              //             color: Colors.red,
-              //             borderRadius: BorderRadius.circular(20.0)),
-              //       ),
-              //     ),
-              //     Container(
-              //       height: 200,
-              //       color: Colors.blue,
-              //     ),
-              //   ],
-              // ),
+            //     // padding
+            //     Column(
+            //   children: [
+            //     Padding(
+            //       padding: EdgeInsets.all(22),
+            //       child: Container(
+            //         height: 200,
+            //         decoration: BoxDecoration(
+            //             color: Colors.red,
+            //             borderRadius: BorderRadius.circular(20.0)),
+            //       ),
+            //     ),
+            //     Container(
+            //       height: 200,
+            //       color: Colors.blue,
+            //     ),
+            //   ],
+            // ),
 
-              // button and sizedbox
-              Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            SizedBox(
-              width: 150,
-              child: ElevatedButton(
-                onPressed: () {
-                  print("Elevated Button");
-                },
-                child: Row(
-                  children: [
-                    Icon(
-                      Icons.ads_click,
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(left: 10),
-                      child: Text("Click Me"),
-                    ),
-                  ],
+            // button and sizedbox
+            //         Center(
+            //   child: Column(
+            //     mainAxisAlignment: MainAxisAlignment.center,
+            //     children: [
+            //       SizedBox(
+            //         width: 150,
+            //         child: ElevatedButton(
+            //           onPressed: () {
+            //             print("Elevated Button");
+            //           },
+            //           child: Row(
+            //             children: [
+            //               Icon(
+            //                 Icons.ads_click,
+            //               ),
+            //               Padding(
+            //                 padding: const EdgeInsets.only(left: 10),
+            //                 child: Text("Click Me"),
+            //               ),
+            //             ],
+            //           ),
+            //         ),
+            //       ),
+            //       TextButton(
+            //         onPressed: () {
+            //           print("Text Button");
+            //         },
+            //         child: Text("Click Me"),
+            //       ),
+            //       IconButton(
+            //         onPressed: () {
+            //           print("Icon button");
+            //         },
+            //         icon: Icon(
+            //           Icons.ads_click,
+            //           semanticLabel: "Click Me",
+            //         ),
+            //       )
+            //     ],
+            //   ),
+            // ),
+
+            // card, network image, circle avater
+            Center(
+          child: Column(
+            children: [
+              Padding(
+                padding: EdgeInsets.all(20),
+                child: Card(
+                  elevation: 40,
+                  child: Image.network(
+                    "https://res.cloudinary.com/delu47omx/image/upload/v1704209790/MyPort/profile/abushama_v8i4yl.jpg",
+                  ),
                 ),
               ),
-            ),
-            TextButton(
-              onPressed: () {
-                print("Text Button");
-              },
-              child: Text("Click Me"),
-            ),
-            IconButton(
-              onPressed: () {
-                print("Icon button");
-              },
-              icon: Icon(
-                Icons.ads_click,
-                semanticLabel: "Click Me",
-              ),
-            )
-          ],
+              CircleAvatar(
+                backgroundColor: Colors.amber,
+                radius: 60,
+                backgroundImage: NetworkImage(
+                    "https://res.cloudinary.com/delu47omx/image/upload/v1704209790/MyPort/profile/abushama_v8i4yl.jpg"),
+              )
+            ],
+          ),
         ),
-      )),
+      ),
     );
   }
 }
