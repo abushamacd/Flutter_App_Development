@@ -7,6 +7,14 @@ class Homepage extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+        appBar: AppBar(
+          leading: Icon(Icons.home),
+          title: Text("App Bar"),
+          actions: [
+            Icon(Icons.search_rounded),
+            Icon(Icons.person),
+          ],
+        ),
         body:
             // // container and text
             //     Container(
@@ -183,6 +191,14 @@ class Homepage extends StatelessWidget {
               )
             ],
           ),
+        ),
+
+        // floating button
+        floatingActionButton: FloatingActionButton(
+          onPressed: () {
+            print("Float Button");
+          },
+          child: Icon(Icons.home),
         ),
       ),
     );
