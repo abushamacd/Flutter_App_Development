@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_core/widgets/list_item.dart';
 
 class Homepage extends StatelessWidget {
   const Homepage({super.key});
@@ -200,36 +201,82 @@ class Homepage extends StatelessWidget {
             //   ),
             // )
 
-            // stack
-            Stack(
+            //    // stack
+            //     Stack(
+            //   children: [
+            //     Column(
+            //       children: [
+            //         Container(
+            //           height: 100,
+            //           width: double.infinity,
+            //           color: Colors.amber,
+            //         ),
+            //         Container(
+            //           height: 100,
+            //           width: double.infinity,
+            //           color: Colors.black,
+            //         ),
+            //       ],
+            //     ),
+            //     Row(
+            //       mainAxisAlignment: MainAxisAlignment.center,
+            //       children: [
+            //         Padding(
+            //           padding: const EdgeInsets.only(top: 40),
+            //           child: CircleAvatar(
+            //             backgroundColor: Colors.amber,
+            //             radius: 60,
+            //             backgroundImage: AssetImage('assets/images/admin.jpg'),
+            //           ),
+            //         ),
+            //       ],
+            //     )
+            //   ],
+            // )
+
+            // list view
+            ListView(
           children: [
-            Column(
-              children: [
-                Container(
-                  height: 100,
-                  width: double.infinity,
-                  color: Colors.amber,
-                ),
-                Container(
-                  height: 100,
-                  width: double.infinity,
-                  color: Colors.black,
-                ),
-              ],
+            ListItem(
+              color: Colors.blue,
+              text: "List 1",
             ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Padding(
-                  padding: const EdgeInsets.only(top: 40),
-                  child: CircleAvatar(
-                    backgroundColor: Colors.amber,
-                    radius: 60,
-                    backgroundImage: AssetImage('assets/images/admin.jpg'),
-                  ),
-                ),
-              ],
-            )
+            ListItem(
+              color: Colors.green,
+              text: "List 2",
+            ),
+            ListItem(
+              color: Colors.red,
+              text: "List 3",
+            ),
+            ListItem(
+              color: Colors.amber,
+              text: "List 4",
+            ),
+            ListItem(
+              color: Colors.purple,
+              text: "List 5",
+            ),
+            ListItem(
+              color: Colors.blue,
+              text: "List 1",
+            ),
+            ListItem(
+              color: Colors.green,
+              text: "List 2",
+            ),
+            ListItem(
+              color: Colors.red,
+              text: "List 3",
+            ),
+            ListItem(
+              color: Colors.amber,
+              text: "List 4",
+            ),
+            ListItem(
+              color: Colors.purple,
+              text: "List 5",
+            ),
           ],
         )
 
