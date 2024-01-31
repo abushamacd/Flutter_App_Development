@@ -193,12 +193,45 @@ class Homepage extends StatelessWidget {
             //   ),
             // ),
 
-        //     // asset image
-        //     Center(
-        //   child: Image(
-        //     image: AssetImage('assets/images/admin.jpg'),
-        //   ),
-        // )
+            //     // asset image
+            //     Center(
+            //   child: Image(
+            //     image: AssetImage('assets/images/admin.jpg'),
+            //   ),
+            // )
+
+            // stack
+            Stack(
+          children: [
+            Column(
+              children: [
+                Container(
+                  height: 100,
+                  width: double.infinity,
+                  color: Colors.amber,
+                ),
+                Container(
+                  height: 100,
+                  width: double.infinity,
+                  color: Colors.black,
+                ),
+              ],
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.only(top: 40),
+                  child: CircleAvatar(
+                    backgroundColor: Colors.amber,
+                    radius: 60,
+                    backgroundImage: AssetImage('assets/images/admin.jpg'),
+                  ),
+                ),
+              ],
+            )
+          ],
+        )
 
         // floating button
         ,
