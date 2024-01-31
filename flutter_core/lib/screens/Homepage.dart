@@ -170,30 +170,38 @@ class Homepage extends StatelessWidget {
             //   ),
             // ),
 
-            // card, network image, circle avater
-            Center(
-          child: Column(
-            children: [
-              Padding(
-                padding: EdgeInsets.all(20),
-                child: Card(
-                  elevation: 40,
-                  child: Image.network(
-                    "https://res.cloudinary.com/delu47omx/image/upload/v1704209790/MyPort/profile/abushama_v8i4yl.jpg",
-                  ),
-                ),
-              ),
-              CircleAvatar(
-                backgroundColor: Colors.amber,
-                radius: 60,
-                backgroundImage: NetworkImage(
-                    "https://res.cloudinary.com/delu47omx/image/upload/v1704209790/MyPort/profile/abushama_v8i4yl.jpg"),
-              )
-            ],
-          ),
-        ),
+            //     // card, network image, circle avater
+            //     Center(
+            //   child: Column(
+            //     children: [
+            //       Padding(
+            //         padding: EdgeInsets.all(20),
+            //         child: Card(
+            //           elevation: 40,
+            //           child: Image.network(
+            //             "https://res.cloudinary.com/delu47omx/image/upload/v1704209790/MyPort/profile/abushama_v8i4yl.jpg",
+            //           ),
+            //         ),
+            //       ),
+            //       CircleAvatar(
+            //         backgroundColor: Colors.amber,
+            //         radius: 60,
+            //         backgroundImage: NetworkImage(
+            //             "https://res.cloudinary.com/delu47omx/image/upload/v1704209790/MyPort/profile/abushama_v8i4yl.jpg"),
+            //       )
+            //     ],
+            //   ),
+            // ),
+
+        //     // asset image
+        //     Center(
+        //   child: Image(
+        //     image: AssetImage('assets/images/admin.jpg'),
+        //   ),
+        // )
 
         // floating button
+        ,
         floatingActionButton: FloatingActionButton(
           onPressed: () {
             print("Float Button");
