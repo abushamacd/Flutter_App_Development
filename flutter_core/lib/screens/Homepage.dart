@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_core/screens/list_view_builder.dart';
 import 'package:flutter_core/widgets/list_item.dart';
 
 class Homepage extends StatelessWidget {
@@ -234,51 +235,63 @@ class Homepage extends StatelessWidget {
             //   ],
             // )
 
-            // list view
-            ListView(
-          children: [
-            ListItem(
-              color: Colors.blue,
-              text: "List 1",
-            ),
-            ListItem(
-              color: Colors.green,
-              text: "List 2",
-            ),
-            ListItem(
-              color: Colors.red,
-              text: "List 3",
-            ),
-            ListItem(
-              color: Colors.amber,
-              text: "List 4",
-            ),
-            ListItem(
-              color: Colors.purple,
-              text: "List 5",
-            ),
-            ListItem(
-              color: Colors.blue,
-              text: "List 1",
-            ),
-            ListItem(
-              color: Colors.green,
-              text: "List 2",
-            ),
-            ListItem(
-              color: Colors.red,
-              text: "List 3",
-            ),
-            ListItem(
-              color: Colors.amber,
-              text: "List 4",
-            ),
-            ListItem(
-              color: Colors.purple,
-              text: "List 5",
-            ),
-          ],
-        )
+            //     // list view
+            //     ListView(
+            //   children: [
+            //     ListItem(
+            //       color: Colors.blue,
+            //       text: "List 1",
+            //     ),
+            //     ListItem(
+            //       color: Colors.green,
+            //       text: "List 2",
+            //     ),
+            //     ListItem(
+            //       color: Colors.red,
+            //       text: "List 3",
+            //     ),
+            //     ListItem(
+            //       color: Colors.amber,
+            //       text: "List 4",
+            //     ),
+            //     ListItem(
+            //       color: Colors.purple,
+            //       text: "List 5",
+            //     ),
+            //     ListItem(
+            //       color: Colors.blue,
+            //       text: "List 1",
+            //     ),
+            //     ListItem(
+            //       color: Colors.green,
+            //       text: "List 2",
+            //     ),
+            //     ListItem(
+            //       color: Colors.red,
+            //       text: "List 3",
+            //     ),
+            //     ListItem(
+            //       color: Colors.amber,
+            //       text: "List 4",
+            //     ),
+            //     ListItem(
+            //       color: Colors.purple,
+            //       text: "List 5",
+            //     ),
+            //   ],
+            // )
+
+            // list tile
+            //     ListTile(
+            //   leading: Icon(Icons.home),
+            //   subtitle: Text("Subttile"),
+            //   title: Text("Title"),
+            //   trailing: Icon(Icons.edit),
+            // )
+
+            // ListViewBuilder
+
+            ListViewBuilder()
 
         // floating button
         ,
