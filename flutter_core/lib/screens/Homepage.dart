@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_core/screens/list_view_builder.dart';
-import 'package:flutter_core/widgets/list_item.dart';
+import 'package:flutter_core/screens/about.dart';
 
 class Homepage extends StatelessWidget {
   const Homepage({super.key});
@@ -11,7 +10,7 @@ class Homepage extends StatelessWidget {
       child: Scaffold(
         appBar: AppBar(
           leading: Icon(Icons.home),
-          title: Text("App Bar"),
+          title: Text("Home Page"),
           actions: [
             Icon(Icons.search_rounded),
             Icon(Icons.person),
@@ -289,9 +288,29 @@ class Homepage extends StatelessWidget {
             //   trailing: Icon(Icons.edit),
             // )
 
-            // ListViewBuilder
+            // // ListViewBuilder
+            // ListViewBuilder()
 
-            ListViewBuilder()
+            // navigation
+            Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (ctx) {
+                          return About(name: "Abu Shama");
+                        },
+                      ),
+                    );
+                  },
+                  child: Text("About"))
+            ],
+          ),
+        )
 
         // floating button
         ,
