@@ -4,9 +4,9 @@ import 'package:pokemon/widgets/badge.dart';
 import '../screens/details_page.dart';
 
 class PokemonCard extends StatelessWidget {
-  const PokemonCard({
-    super.key,
-  });
+  PokemonCard({super.key, this.pokemon});
+
+  final Map? pokemon;
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +15,7 @@ class PokemonCard extends StatelessWidget {
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: ((context) => PokeDetails()),
+            builder: ((context) => PokeDetails(pokemon: pokemon)),
           ),
         );
       },
@@ -35,15 +35,15 @@ class PokemonCard extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
-                    "title",
+                    pokemon?["name"],
                     style: TextStyle(
                       fontSize: 25.00,
                       fontWeight: FontWeight.w500,
                       color: Colors.white,
                     ),
                   ),
-                  TagBadge(tagText: "tag"),
-                  TagBadge(tagText: "tag")
+                  for (int i = 0; i < pokemon?['type'].length; i++)
+                    TagBadge(tagText: pokemon?['type'][i])
                 ],
               ),
             ),
@@ -52,9 +52,10 @@ class PokemonCard extends StatelessWidget {
             right: 0.00,
             bottom: 0.00,
             child: Hero(
-              tag: "01",
+              tag: "${pokemon?['num']}",
               child: Image.network(
-                "http://www.serebii.net/pokemongo/pokemon/001.png",
+                pokemon?['img'],
+                key: Key(pokemon?['img']),
                 width: 100.0,
               ),
             ),

@@ -4,7 +4,9 @@ import 'package:pokemon/widgets/page_title.dart';
 import '../widgets/details_title.dart';
 
 class PokeDetails extends StatelessWidget {
-  const PokeDetails({super.key});
+  const PokeDetails({super.key, this.pokemon});
+
+  final Map? pokemon;
 
   @override
   Widget build(BuildContext context) {
@@ -39,13 +41,13 @@ class PokeDetails extends StatelessWidget {
                       children: [
                         Padding(
                             padding: const EdgeInsets.only(bottom: 10),
-                            child: PageTitle(title: "PokeDesk")),
+                            child: PageTitle(title: "${pokemon?["name"]}")),
                         Padding(
                           padding: const EdgeInsets.only(left: 20),
                           child: Row(
                             children: [
-                              TagBadge(tagText: "tagText"),
-                              TagBadge(tagText: "tagText"),
+                              for (int i = 0; i < pokemon?['type'].length; i++)
+                                TagBadge(tagText: pokemon?['type'][i])
                             ],
                           ),
                         )
@@ -57,7 +59,7 @@ class PokeDetails extends StatelessWidget {
                   flex: 5,
                   child: Container(
                     padding:
-                        EdgeInsets.symmetric(horizontal: 20.0, vertical: 60),
+                        EdgeInsets.symmetric(horizontal: 20.0, vertical: 80),
                     child: Row(
                       children: [
                         Expanded(
@@ -71,22 +73,22 @@ class PokeDetails extends StatelessWidget {
                                 color: Colors.grey,
                               ),
                               DetailsTitle(
-                                text: "Width",
-                                fontWeight: FontWeight.normal,
-                                color: Colors.grey,
-                              ),
-                              DetailsTitle(
                                 text: "Weight",
                                 fontWeight: FontWeight.normal,
                                 color: Colors.grey,
                               ),
                               DetailsTitle(
-                                text: "Speed",
+                                text: "Candy",
                                 fontWeight: FontWeight.normal,
                                 color: Colors.grey,
                               ),
                               DetailsTitle(
-                                text: "Space",
+                                text: "Candy Count",
+                                fontWeight: FontWeight.normal,
+                                color: Colors.grey,
+                              ),
+                              DetailsTitle(
+                                text: "Speed",
                                 fontWeight: FontWeight.normal,
                                 color: Colors.grey,
                               ),
@@ -99,27 +101,28 @@ class PokeDetails extends StatelessWidget {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               DetailsTitle(
-                                text: "Height",
+                                text: "${pokemon?['height']}",
                                 fontWeight: FontWeight.bold,
                                 color: Colors.black,
                               ),
                               DetailsTitle(
-                                text: "Width",
+                                text: "${pokemon?['weight']}",
                                 fontWeight: FontWeight.bold,
                                 color: Colors.black,
                               ),
                               DetailsTitle(
-                                text: "Weight",
+                                text: "${pokemon?['candy']}",
                                 fontWeight: FontWeight.bold,
                                 color: Colors.black,
                               ),
                               DetailsTitle(
-                                text: "Speed",
+                                text:
+                                    "${(pokemon?['candy_count'] != null) ? "${pokemon?['candy_count']}" : "0"}",
                                 fontWeight: FontWeight.bold,
                                 color: Colors.black,
                               ),
                               DetailsTitle(
-                                text: "Space",
+                                text: "${pokemon?['egg']}",
                                 fontWeight: FontWeight.bold,
                                 color: Colors.black,
                               ),
@@ -146,9 +149,10 @@ class PokeDetails extends StatelessWidget {
                 width: 250,
                 height: 250,
                 child: Hero(
-                  tag: "01",
+                  tag: "${pokemon?['num']}",
                   child: Image.network(
-                    "http://www.serebii.net/pokemongo/pokemon/001.png",
+                    pokemon?['img'],
+                    key: Key(pokemon?['img']),
                     fit: BoxFit.cover,
                   ),
                 ),

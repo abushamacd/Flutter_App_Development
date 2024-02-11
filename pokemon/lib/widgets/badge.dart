@@ -7,7 +7,7 @@ class TagBadge extends StatelessWidget {
     required this.tagText,
   }) : super(key: key);
 
-  final String tagText;
+  final tagText;
 
   @override
   Widget build(BuildContext context) {
