@@ -3,9 +3,11 @@ import 'user.dart';
 
 void main() {
   // create instance
-  var usr1 = User();
-  usr1.userName = "shama";
-  usr1.userPass = "123";
+  // var usr1 = User();
+  // usr1.userName = "shama";
+  // usr1.userPass = "123";
+
+  var usr1 = User('shama', '123');
 
   print("Type Your Name");
   String? name = stdin.readLineSync();
@@ -17,6 +19,8 @@ void main() {
 
   if (usr1.login(name!, password!)) {
     print('User log in successful');
+  } else {
+    print('User log in failed');
   }
 
   usr1.logout(name);
