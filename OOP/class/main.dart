@@ -7,7 +7,10 @@ void main() {
   // usr1.userName = "shama";
   // usr1.userPass = "123";
 
-  var usr1 = User('shama', '123');
+  var usr1 = User();
+
+  usr1.userName = "shama";
+  usr1.userPass = "123";
 
   print("Type Your Name");
   String? name = stdin.readLineSync();
