@@ -20,4 +20,7 @@ abstract class CommonUser {
   }
 
   void deleteAccount();
+  void checkOverride() {
+    print("From Common");
+  }
 }

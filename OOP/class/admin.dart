@@ -9,8 +9,12 @@ class Admin extends CommonUser {
     print("Create Product");
   }
 
-  @override
   void deleteAccount() {
     print("Admin Account Deleted");
+  }
+
+  @override
+  void checkOverride() {
+    print("From Admin");
   }
 }

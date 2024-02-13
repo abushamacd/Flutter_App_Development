@@ -22,4 +22,9 @@ class User extends CommonUser {
   void deleteAccount() {
     print("User Account Deleted");
   }
+
+  @override
+  void checkOverride() {
+    print("From user");
+  }
 }
