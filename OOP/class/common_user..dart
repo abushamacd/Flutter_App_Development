@@ -3,7 +3,7 @@ class CommonUser {
   String? userPass;
   bool? islogin = false;
 
-  // CommonUser(String this.userName, String this.userPass) {}
+  CommonUser(String this.userName, String this.userPass) {}
 
   bool login(String name, String password) {
     if (name == userName && password == userPass) {

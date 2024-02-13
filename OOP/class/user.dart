@@ -12,7 +12,10 @@ import 'common_user..dart';
 class User extends CommonUser {
   int? hasBlance;
 
+  User(String userName, String userPass, int? this.hasBlance)
+      : super(userName, userPass);
+
   void buyProduct() {
-    print("Buy Product");
+    print("Buy Product of $hasBlance");
   }
 }

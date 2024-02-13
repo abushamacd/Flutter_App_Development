@@ -7,10 +7,10 @@ void main() {
   // usr1.userName = "shama";
   // usr1.userPass = "123";
 
-  var usr1 = User();
+  var usr1 = User('shama', '123', 33);
 
-  usr1.userName = "shama";
-  usr1.userPass = "123";
+  // usr1.userName = "shama";
+  // usr1..userPass = "123";
 
   print("Type Your Name");
   String? name = stdin.readLineSync();
@@ -26,5 +26,5 @@ void main() {
     print('User log in failed');
   }
 
-  usr1.logout(name);
+  usr1.buyProduct();
 }
