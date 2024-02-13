@@ -1,4 +1,5 @@
 import 'dart:io';
+// import 'common_user..dart';
 import 'user.dart';
 
 void main() {
@@ -8,6 +9,8 @@ void main() {
   // usr1.userPass = "123";
 
   var usr1 = User('shama', '123', 33);
+
+  // var another_user = CommonUser("kk", "jj"); // this is wrong because commonuser is a abastrac class
 
   // usr1.userName = "shama";
   // usr1..userPass = "123";

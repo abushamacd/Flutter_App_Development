@@ -1,4 +1,4 @@
-class CommonUser {
+abstract class CommonUser {
   String? userName;
   String? userPass;
   bool? islogin = false;
