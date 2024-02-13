@@ -18,4 +18,8 @@ class User extends CommonUser {
   void buyProduct() {
     print("Buy Product of $hasBlance");
   }
+
+  void deleteAccount() {
+    print("User Account Deleted");
+  }
 }

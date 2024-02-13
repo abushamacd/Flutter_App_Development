@@ -18,4 +18,6 @@ abstract class CommonUser {
     }
     return false;
   }
+
+  void deleteAccount();
 }
